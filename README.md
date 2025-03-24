@@ -1,5 +1,5 @@
 # Weather Data Analysis and Visualization Project
-
+![Hist-Cities](city_temperatures.png)
 This project gathers weather data for European cities, processes and visualizes it in different ways, and generates an interactive map displaying weather information for each city. The weather data is fetched from the OpenWeatherMap API, and the project uses various Python libraries for data manipulation, visualization, and web mapping.
 
 ## Table of Contents
@@ -24,15 +24,18 @@ The final output consists of the following files:
 4. **`temperature_histogram.png`**: A histogram showing the distribution of city temperatures.
 5. **`weather_map.html`**: An interactive map that visualizes the weather data for each city.
 
+
 ## Features
 
 - **Weather Data Collection**: The script fetches real-time weather data (temperature, humidity, pressure, and weather description) for cities in Europe using the OpenWeatherMap API.
 - **Data Storage**: The data is saved into a CSV file (`weather_data.csv`) for later analysis and visualization.
 - **Data Visualization**:
   - **Temperature Histogram**: A histogram of city temperatures to analyze temperature distribution across cities.
+  - ![Hist-Temp](temperature_histogram.png)
+
   - **City Temperatures Bar Chart**: A bar chart with a gradient color scheme that displays the temperature of each city.
 - **Interactive Map**: An interactive map created with `folium` that displays markers for each city, showing temperature, humidity, pressure, and weather description when clicked.
-
+- ![Map](weather_map.png)
 ## Technologies Used
 
 - **Python 3.x**
