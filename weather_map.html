@@ -1,0 +1,2414 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4d70cd30b65a59e7c5bb9ce16911606b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4d70cd30b65a59e7c5bb9ce16911606b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4d70cd30b65a59e7c5bb9ce16911606b = L.map(
+                "map_4d70cd30b65a59e7c5bb9ce16911606b",
+                {
+                    center: [47.72049278350515, 15.09337319587629],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_936ca5d88ea3e7f090da9e9b87b56000 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_936ca5d88ea3e7f090da9e9b87b56000.addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+            var marker_ea330e5b974fd56e528cf74ec268f0a5 = L.marker(
+                [39.9058, 20.0576],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_e3cf892b769afbca781562e7843c6e90 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ccfbc64cd24df478f897c46f94e43abb = $(`<div id="html_ccfbc64cd24df478f897c46f94e43abb" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Finiq, AL<br>     <strong>Temperature:</strong> 13.67 °C<br>     <strong>Humidity:</strong> 84.0%<br>     <strong>Pressure:</strong> 1022.0 hPa<br>     <strong>Weather:</strong> light rain     </div>`)[0];
+                popup_e3cf892b769afbca781562e7843c6e90.setContent(html_ccfbc64cd24df478f897c46f94e43abb);
+            
+        
+
+        marker_ea330e5b974fd56e528cf74ec268f0a5.bindPopup(popup_e3cf892b769afbca781562e7843c6e90)
+        ;
+
+        
+    
+    
+            var marker_69885ae5352837dcbeef749eaf4b177a = L.marker(
+                [40.7602, 20.01],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_30df970029c1d3d56fc91db39982de26 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ef32299efab1e529240fc30a81383e3c = $(`<div id="html_ef32299efab1e529240fc30a81383e3c" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Qereshnik, AL<br>     <strong>Temperature:</strong> 15.58 °C<br>     <strong>Humidity:</strong> 72.0%<br>     <strong>Pressure:</strong> 1017.0 hPa<br>     <strong>Weather:</strong> light rain     </div>`)[0];
+                popup_30df970029c1d3d56fc91db39982de26.setContent(html_ef32299efab1e529240fc30a81383e3c);
+            
+        
+
+        marker_69885ae5352837dcbeef749eaf4b177a.bindPopup(popup_30df970029c1d3d56fc91db39982de26)
+        ;
+
+        
+    
+    
+            var marker_0c2bd2a8035c10a0cf073ea064897bc4 = L.marker(
+                [40.7872, 20.7107],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_4bca8d6cf8832cbf4d5926a6f6e8729a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e9feedcd8eafa82bd24dc5fdfd55bcea = $(`<div id="html_e9feedcd8eafa82bd24dc5fdfd55bcea" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Pirg, AL<br>     <strong>Temperature:</strong> 10.4 °C<br>     <strong>Humidity:</strong> 84.0%<br>     <strong>Pressure:</strong> 1020.0 hPa<br>     <strong>Weather:</strong> moderate rain     </div>`)[0];
+                popup_4bca8d6cf8832cbf4d5926a6f6e8729a.setContent(html_e9feedcd8eafa82bd24dc5fdfd55bcea);
+            
+        
+
+        marker_0c2bd2a8035c10a0cf073ea064897bc4.bindPopup(popup_4bca8d6cf8832cbf4d5926a6f6e8729a)
+        ;
+
+        
+    
+    
+            var marker_4a3d1892ee668390e731db230928c0f7 = L.marker(
+                [41.2843, 20.2093],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_8ebcf974e7221abd5d8a0fd30f004afa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_928935c52ea8e172b1f9b3ce83bbc6c6 = $(`<div id="html_928935c52ea8e172b1f9b3ce83bbc6c6" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Orenjë, AL<br>     <strong>Temperature:</strong> 11.62 °C<br>     <strong>Humidity:</strong> 84.0%<br>     <strong>Pressure:</strong> 1018.0 hPa<br>     <strong>Weather:</strong> light rain     </div>`)[0];
+                popup_8ebcf974e7221abd5d8a0fd30f004afa.setContent(html_928935c52ea8e172b1f9b3ce83bbc6c6);
+            
+        
+
+        marker_4a3d1892ee668390e731db230928c0f7.bindPopup(popup_8ebcf974e7221abd5d8a0fd30f004afa)
+        ;
+
+        
+    
+    
+            var marker_ce853eaad86bece49f1d82c0bb244221 = L.marker(
+                [41.2852, 20.3233],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_f89b6aaabe9e1741a78d4c6d54e3e27f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4bc7aa6b6c1f70404bd1771df7088e20 = $(`<div id="html_4bc7aa6b6c1f70404bd1771df7088e20" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Lunik, AL<br>     <strong>Temperature:</strong> 11.64 °C<br>     <strong>Humidity:</strong> 89.0%<br>     <strong>Pressure:</strong> 1019.0 hPa<br>     <strong>Weather:</strong> light rain     </div>`)[0];
+                popup_f89b6aaabe9e1741a78d4c6d54e3e27f.setContent(html_4bc7aa6b6c1f70404bd1771df7088e20);
+            
+        
+
+        marker_ce853eaad86bece49f1d82c0bb244221.bindPopup(popup_f89b6aaabe9e1741a78d4c6d54e3e27f)
+        ;
+
+        
+    
+    
+            var marker_dd0d539a862d8dcb0c71dbfc0deaddd7 = L.marker(
+                [41.1794, 20.315],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_1edff2083bf70bbec9bce09c2299b209 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_da4d618041d8fc6399299f9407eb4882 = $(`<div id="html_da4d618041d8fc6399299f9407eb4882" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Librazhd, AL<br>     <strong>Temperature:</strong> 13.35 °C<br>     <strong>Humidity:</strong> 87.0%<br>     <strong>Pressure:</strong> 1019.0 hPa<br>     <strong>Weather:</strong> light rain     </div>`)[0];
+                popup_1edff2083bf70bbec9bce09c2299b209.setContent(html_da4d618041d8fc6399299f9407eb4882);
+            
+        
+
+        marker_dd0d539a862d8dcb0c71dbfc0deaddd7.bindPopup(popup_1edff2083bf70bbec9bce09c2299b209)
+        ;
+
+        
+    
+    
+            var marker_8deb17f966b16f02ca9fa988281b4353 = L.marker(
+                [40.8056, 20.2509],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_313407048eef3ae5855b5e76657af181 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9cd46af9d1eef05045b86756a6e012b4 = $(`<div id="html_9cd46af9d1eef05045b86756a6e012b4" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Kodovjat, AL<br>     <strong>Temperature:</strong> 14.84 °C<br>     <strong>Humidity:</strong> 79.0%<br>     <strong>Pressure:</strong> 1018.0 hPa<br>     <strong>Weather:</strong> light rain     </div>`)[0];
+                popup_313407048eef3ae5855b5e76657af181.setContent(html_9cd46af9d1eef05045b86756a6e012b4);
+            
+        
+
+        marker_8deb17f966b16f02ca9fa988281b4353.bindPopup(popup_313407048eef3ae5855b5e76657af181)
+        ;
+
+        
+    
+    
+            var marker_2cc8351a63831604089d383b8eccdff8 = L.marker(
+                [40.4667, 19.4897],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_37e0403de3a106eb10a48c6cc8f8f20f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cf1036a9c56d36da56398961cc20c557 = $(`<div id="html_cf1036a9c56d36da56398961cc20c557" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Vlorë, AL<br>     <strong>Temperature:</strong> 18.37 °C<br>     <strong>Humidity:</strong> 58.0%<br>     <strong>Pressure:</strong> 1016.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_37e0403de3a106eb10a48c6cc8f8f20f.setContent(html_cf1036a9c56d36da56398961cc20c557);
+            
+        
+
+        marker_2cc8351a63831604089d383b8eccdff8.bindPopup(popup_37e0403de3a106eb10a48c6cc8f8f20f)
+        ;
+
+        
+    
+    
+            var marker_26a721f254f2c970f4f80c3ed4fc1655 = L.marker(
+                [41.8136, 19.5939],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_a1596577788ad5446af8a4f63de63813 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e5741915e16de2e343652e5f49b84f38 = $(`<div id="html_e5741915e16de2e343652e5f49b84f38" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Shëngjin, AL<br>     <strong>Temperature:</strong> 13.17 °C<br>     <strong>Humidity:</strong> 93.0%<br>     <strong>Pressure:</strong> 1017.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_a1596577788ad5446af8a4f63de63813.setContent(html_e5741915e16de2e343652e5f49b84f38);
+            
+        
+
+        marker_26a721f254f2c970f4f80c3ed4fc1655.bindPopup(popup_a1596577788ad5446af8a4f63de63813)
+        ;
+
+        
+    
+    
+            var marker_9e7b21a73317386760b741e1b0becff3 = L.marker(
+                [40.1526, 19.6395],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_22653537fbfabe3e4bd38e1016a7f9a9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fd0ede937c565a32d2c234173c2f6fa2 = $(`<div id="html_fd0ede937c565a32d2c234173c2f6fa2" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Dhërmi, AL<br>     <strong>Temperature:</strong> 12.48 °C<br>     <strong>Humidity:</strong> 65.0%<br>     <strong>Pressure:</strong> 1018.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_22653537fbfabe3e4bd38e1016a7f9a9.setContent(html_fd0ede937c565a32d2c234173c2f6fa2);
+            
+        
+
+        marker_9e7b21a73317386760b741e1b0becff3.bindPopup(popup_22653537fbfabe3e4bd38e1016a7f9a9)
+        ;
+
+        
+    
+    
+            var marker_5d31654538fbd6673a32f52f99776582 = L.marker(
+                [47.2167, 16.1],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_47eda734a7683883b61a73d7063349f5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_93f63e2846637119f0d104a2e9545557 = $(`<div id="html_93f63e2846637119f0d104a2e9545557" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Wörterberg, AT<br>     <strong>Temperature:</strong> 14.35 °C<br>     <strong>Humidity:</strong> 49.0%<br>     <strong>Pressure:</strong> 1010.0 hPa<br>     <strong>Weather:</strong> broken clouds     </div>`)[0];
+                popup_47eda734a7683883b61a73d7063349f5.setContent(html_93f63e2846637119f0d104a2e9545557);
+            
+        
+
+        marker_5d31654538fbd6673a32f52f99776582.bindPopup(popup_47eda734a7683883b61a73d7063349f5)
+        ;
+
+        
+    
+    
+            var marker_ccf87a3f7a4508016814b4ce728eee54 = L.marker(
+                [47.4791, 12.0805],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_3b1b9c9392506a7857c2287504926619 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8f33b2bb7f7719ade694e11b75256a00 = $(`<div id="html_8f33b2bb7f7719ade694e11b75256a00" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Wörgl, AT<br>     <strong>Temperature:</strong> 10.68 °C<br>     <strong>Humidity:</strong> 62.0%<br>     <strong>Pressure:</strong> 1011.0 hPa<br>     <strong>Weather:</strong> scattered clouds     </div>`)[0];
+                popup_3b1b9c9392506a7857c2287504926619.setContent(html_8f33b2bb7f7719ade694e11b75256a00);
+            
+        
+
+        marker_ccf87a3f7a4508016814b4ce728eee54.bindPopup(popup_3b1b9c9392506a7857c2287504926619)
+        ;
+
+        
+    
+    
+            var marker_b86cd0a4e5187c21b7c750c1b75e0761 = L.marker(
+                [47.4667, 13.1833],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_8d84d40c54e33d295e24e8e2ff99871d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_af490e353d0b4f1ccd9a48b08781f3ae = $(`<div id="html_af490e353d0b4f1ccd9a48b08781f3ae" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Werfen, AT<br>     <strong>Temperature:</strong> 12.83 °C<br>     <strong>Humidity:</strong> 75.0%<br>     <strong>Pressure:</strong> 1011.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_8d84d40c54e33d295e24e8e2ff99871d.setContent(html_af490e353d0b4f1ccd9a48b08781f3ae);
+            
+        
+
+        marker_b86cd0a4e5187c21b7c750c1b75e0761.bindPopup(popup_8d84d40c54e33d295e24e8e2ff99871d)
+        ;
+
+        
+    
+    
+            var marker_8227bd2dce10dffaa0058159cef28d7a = L.marker(
+                [47.2167, 15.6167],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_c307ee29bdd16184404659bedff05fa0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f4f6e7c0798295c3249733a6ea6fb35e = $(`<div id="html_f4f6e7c0798295c3249733a6ea6fb35e" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Weiz, AT<br>     <strong>Temperature:</strong> 16.6 °C<br>     <strong>Humidity:</strong> 52.0%<br>     <strong>Pressure:</strong> 1010.0 hPa<br>     <strong>Weather:</strong> broken clouds     </div>`)[0];
+                popup_c307ee29bdd16184404659bedff05fa0.setContent(html_f4f6e7c0798295c3249733a6ea6fb35e);
+            
+        
+
+        marker_8227bd2dce10dffaa0058159cef28d7a.bindPopup(popup_c307ee29bdd16184404659bedff05fa0)
+        ;
+
+        
+    
+    
+            var marker_7c9e41c3d72e9d63c60ebaaeb92effb1 = L.marker(
+                [48.1672, 14.7157],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_f8797352134b429f3e845e40093c186e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0dd123b1deed8180b984a1758e395520 = $(`<div id="html_0dd123b1deed8180b984a1758e395520" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Wallsee, AT<br>     <strong>Temperature:</strong> 14.88 °C<br>     <strong>Humidity:</strong> 63.0%<br>     <strong>Pressure:</strong> 1011.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_f8797352134b429f3e845e40093c186e.setContent(html_0dd123b1deed8180b984a1758e395520);
+            
+        
+
+        marker_7c9e41c3d72e9d63c60ebaaeb92effb1.bindPopup(popup_f8797352134b429f3e845e40093c186e)
+        ;
+
+        
+    
+    
+            var marker_0dc450088bb386ab32e9d40d2143dcba = L.marker(
+                [47.8975, 13.1145],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_f43909c8e7b3e1e3e2561010a7e6f11b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0748101759a4319eb79ca9c83cbde33b = $(`<div id="html_0748101759a4319eb79ca9c83cbde33b" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Waldprechting, AT<br>     <strong>Temperature:</strong> 13.07 °C<br>     <strong>Humidity:</strong> 99.0%<br>     <strong>Pressure:</strong> 1013.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_f43909c8e7b3e1e3e2561010a7e6f11b.setContent(html_0748101759a4319eb79ca9c83cbde33b);
+            
+        
+
+        marker_0dc450088bb386ab32e9d40d2143dcba.bindPopup(popup_f43909c8e7b3e1e3e2561010a7e6f11b)
+        ;
+
+        
+    
+    
+            var marker_e9d5994444f3b465027232730e022e43 = L.marker(
+                [47.0333, 15.15],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_9c370fea83615093bbe6c7025111e2e4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c13a9c8274bfe4d241b82d7f3901426f = $(`<div id="html_c13a9c8274bfe4d241b82d7f3901426f" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Voitsberg, AT<br>     <strong>Temperature:</strong> 17.22 °C<br>     <strong>Humidity:</strong> 44.0%<br>     <strong>Pressure:</strong> 1010.0 hPa<br>     <strong>Weather:</strong> broken clouds     </div>`)[0];
+                popup_9c370fea83615093bbe6c7025111e2e4.setContent(html_c13a9c8274bfe4d241b82d7f3901426f);
+            
+        
+
+        marker_e9d5994444f3b465027232730e022e43.bindPopup(popup_9c370fea83615093bbe6c7025111e2e4)
+        ;
+
+        
+    
+    
+            var marker_054dc0db3e09b09968e4827c700c1025 = L.marker(
+                [48.0443, 16.4462],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_439ba0a5e826c2165eb5f753696bc3f5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4eaa8575bd317d7e4b9052361dc6369e = $(`<div id="html_4eaa8575bd317d7e4b9052361dc6369e" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Velm, AT<br>     <strong>Temperature:</strong> 16.35 °C<br>     <strong>Humidity:</strong> 60.0%<br>     <strong>Pressure:</strong> 1011.0 hPa<br>     <strong>Weather:</strong> light rain     </div>`)[0];
+                popup_439ba0a5e826c2165eb5f753696bc3f5.setContent(html_4eaa8575bd317d7e4b9052361dc6369e);
+            
+        
+
+        marker_054dc0db3e09b09968e4827c700c1025.bindPopup(popup_439ba0a5e826c2165eb5f753696bc3f5)
+        ;
+
+        
+    
+    
+            var marker_75234792325587b2d95c3c3c42cd5491 = L.marker(
+                [47.3, 13.5],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_1706456b3077e58d544d9a6657189a70 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f02d82136819d9679cd8fca1fbd53592 = $(`<div id="html_f02d82136819d9679cd8fca1fbd53592" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Untertauern, AT<br>     <strong>Temperature:</strong> 6.28 °C<br>     <strong>Humidity:</strong> 76.0%<br>     <strong>Pressure:</strong> 1011.0 hPa<br>     <strong>Weather:</strong> broken clouds     </div>`)[0];
+                popup_1706456b3077e58d544d9a6657189a70.setContent(html_f02d82136819d9679cd8fca1fbd53592);
+            
+        
+
+        marker_75234792325587b2d95c3c3c42cd5491.bindPopup(popup_1706456b3077e58d544d9a6657189a70)
+        ;
+
+        
+    
+    
+            var marker_8e7e35ad5e162e5b05735274e261bf06 = L.marker(
+                [47.1092, 16.3348],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_cab5e4c775edf38307765c4c527ec08b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3eab3ff35946b25e7cab176a4c9a200e = $(`<div id="html_3eab3ff35946b25e7cab176a4c9a200e" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Tobaj, AT<br>     <strong>Temperature:</strong> 15.24 °C<br>     <strong>Humidity:</strong> 48.0%<br>     <strong>Pressure:</strong> 1010.0 hPa<br>     <strong>Weather:</strong> broken clouds     </div>`)[0];
+                popup_cab5e4c775edf38307765c4c527ec08b.setContent(html_3eab3ff35946b25e7cab176a4c9a200e);
+            
+        
+
+        marker_8e7e35ad5e162e5b05735274e261bf06.bindPopup(popup_cab5e4c775edf38307765c4c527ec08b)
+        ;
+
+        
+    
+    
+            var marker_8cd2bd27ba3f4912195f1b9bc3263c0d = L.marker(
+                [47.8591, 16.2491],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_52d578a0ee95146ae366708318ecb8a9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a61f62623fdf5064e29a3c99d6fadb19 = $(`<div id="html_a61f62623fdf5064e29a3c99d6fadb19" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Theresienfeld, AT<br>     <strong>Temperature:</strong> 14.43 °C<br>     <strong>Humidity:</strong> 75.0%<br>     <strong>Pressure:</strong> 1011.0 hPa<br>     <strong>Weather:</strong> broken clouds     </div>`)[0];
+                popup_52d578a0ee95146ae366708318ecb8a9.setContent(html_a61f62623fdf5064e29a3c99d6fadb19);
+            
+        
+
+        marker_8cd2bd27ba3f4912195f1b9bc3263c0d.bindPopup(popup_52d578a0ee95146ae366708318ecb8a9)
+        ;
+
+        
+    
+    
+            var marker_40e991d8c230cfdbbf769a5a9fced457 = L.marker(
+                [47.6667, 10.35],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_6305c94654714b2550319faa313534b4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_72ecf836cfab2055779d655220e5d4f3 = $(`<div id="html_72ecf836cfab2055779d655220e5d4f3" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Sulzberg, DE<br>     <strong>Temperature:</strong> 10.4 °C<br>     <strong>Humidity:</strong> 71.0%<br>     <strong>Pressure:</strong> 1013.0 hPa<br>     <strong>Weather:</strong> light rain     </div>`)[0];
+                popup_6305c94654714b2550319faa313534b4.setContent(html_72ecf836cfab2055779d655220e5d4f3);
+            
+        
+
+        marker_40e991d8c230cfdbbf769a5a9fced457.bindPopup(popup_6305c94654714b2550319faa313534b4)
+        ;
+
+        
+    
+    
+            var marker_dfcb4dcac4355ab7eb20885974c7991c = L.marker(
+                [47.7167, 13.4833],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_cdcf4a6852783f5cd2edc2e1e7fa9f90 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_61005059a3781464be2745d9414b910d = $(`<div id="html_61005059a3781464be2745d9414b910d" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Strobl, AT<br>     <strong>Temperature:</strong> 10.48 °C<br>     <strong>Humidity:</strong> 78.0%<br>     <strong>Pressure:</strong> 1012.0 hPa<br>     <strong>Weather:</strong> broken clouds     </div>`)[0];
+                popup_cdcf4a6852783f5cd2edc2e1e7fa9f90.setContent(html_61005059a3781464be2745d9414b910d);
+            
+        
+
+        marker_dfcb4dcac4355ab7eb20885974c7991c.bindPopup(popup_cdcf4a6852783f5cd2edc2e1e7fa9f90)
+        ;
+
+        
+    
+    
+            var marker_1b316186b4486f13c9b17ebd5ffcf923 = L.marker(
+                [47.0333, 15.4],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_6df4ab9ee09ebdea677342d97e77b73c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6cabfa70d1f84e4cfce2954c0e67b6bc = $(`<div id="html_6cabfa70d1f84e4cfce2954c0e67b6bc" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Straßgang, AT<br>     <strong>Temperature:</strong> 18.15 °C<br>     <strong>Humidity:</strong> 44.0%<br>     <strong>Pressure:</strong> 1010.0 hPa<br>     <strong>Weather:</strong> broken clouds     </div>`)[0];
+                popup_6df4ab9ee09ebdea677342d97e77b73c.setContent(html_6cabfa70d1f84e4cfce2954c0e67b6bc);
+            
+        
+
+        marker_1b316186b4486f13c9b17ebd5ffcf923.bindPopup(popup_6df4ab9ee09ebdea677342d97e77b73c)
+        ;
+
+        
+    
+    
+            var marker_57e5171228f61400af31d55c4deb2f38 = L.marker(
+                [47.0881, 11.4899],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_5bc114d6869a2d92851f5f67bfd084ca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a91add30a6ab3dfe2481dc2f25995d46 = $(`<div id="html_a91add30a6ab3dfe2481dc2f25995d46" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Steinach am Brenner, AT<br>     <strong>Temperature:</strong> 11.0 °C<br>     <strong>Humidity:</strong> 57.0%<br>     <strong>Pressure:</strong> 1010.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_5bc114d6869a2d92851f5f67bfd084ca.setContent(html_a91add30a6ab3dfe2481dc2f25995d46);
+            
+        
+
+        marker_57e5171228f61400af31d55c4deb2f38.bindPopup(popup_5bc114d6869a2d92851f5f67bfd084ca)
+        ;
+
+        
+    
+    
+            var marker_9ce9042cb997face4d240869fd97bbeb = L.marker(
+                [46.8212, 15.8983],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_5ac0a343bd76d73f66a9bf7acd407b83 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a6fa8c5ac7332116a2eb9ee1b469844f = $(`<div id="html_a6fa8c5ac7332116a2eb9ee1b469844f" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Stainz bei Straden, AT<br>     <strong>Temperature:</strong> 19.85 °C<br>     <strong>Humidity:</strong> 50.0%<br>     <strong>Pressure:</strong> 1010.0 hPa<br>     <strong>Weather:</strong> broken clouds     </div>`)[0];
+                popup_5ac0a343bd76d73f66a9bf7acd407b83.setContent(html_a6fa8c5ac7332116a2eb9ee1b469844f);
+            
+        
+
+        marker_9ce9042cb997face4d240869fd97bbeb.bindPopup(popup_5ac0a343bd76d73f66a9bf7acd407b83)
+        ;
+
+        
+    
+    
+            var marker_9d2c5560d350934abd48edc2709c809d = L.marker(
+                [47.9, 13.1333],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_bf822fd710f2bb3653886efad08badd1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a0af854cbdd143740912b38f4c0649ee = $(`<div id="html_a0af854cbdd143740912b38f4c0649ee" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Seekirchen am Wallersee, AT<br>     <strong>Temperature:</strong> 13.26 °C<br>     <strong>Humidity:</strong> 99.0%<br>     <strong>Pressure:</strong> 1013.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_bf822fd710f2bb3653886efad08badd1.setContent(html_a0af854cbdd143740912b38f4c0649ee);
+            
+        
+
+        marker_9d2c5560d350934abd48edc2709c809d.bindPopup(popup_bf822fd710f2bb3653886efad08badd1)
+        ;
+
+        
+    
+    
+            var marker_a831b158a2ca1ce94f1848b4d7449558 = L.marker(
+                [48.2741, 14.5818],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_831f5f39fcdd42e704322eadf09fd6a1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c53b908353116654442102cffa51c471 = $(`<div id="html_c53b908353116654442102cffa51c471" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Schwertberg, AT<br>     <strong>Temperature:</strong> 13.84 °C<br>     <strong>Humidity:</strong> 70.0%<br>     <strong>Pressure:</strong> 1011.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_831f5f39fcdd42e704322eadf09fd6a1.setContent(html_c53b908353116654442102cffa51c471);
+            
+        
+
+        marker_a831b158a2ca1ce94f1848b4d7449558.bindPopup(popup_831f5f39fcdd42e704322eadf09fd6a1)
+        ;
+
+        
+    
+    
+            var marker_a9e710de6c26cc9247a7d71a789572b4 = L.marker(
+                [47.4474, 9.7637],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_3977bb7be1e6a6708e8607105b63acbf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1d720420599dd669116ed83147547c6e = $(`<div id="html_1d720420599dd669116ed83147547c6e" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Schwarzach, AT<br>     <strong>Temperature:</strong> 14.01 °C<br>     <strong>Humidity:</strong> 58.0%<br>     <strong>Pressure:</strong> 1012.0 hPa<br>     <strong>Weather:</strong> few clouds     </div>`)[0];
+                popup_3977bb7be1e6a6708e8607105b63acbf.setContent(html_1d720420599dd669116ed83147547c6e);
+            
+        
+
+        marker_a9e710de6c26cc9247a7d71a789572b4.bindPopup(popup_3977bb7be1e6a6708e8607105b63acbf)
+        ;
+
+        
+    
+    
+            var marker_b12ea10d4a7886e03dec931863fb6845 = L.marker(
+                [48.0531, 13.7765],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_9edac00fa668ae1994477f5b915d00c3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9037e334244726f6caaf86d1f109e246 = $(`<div id="html_9037e334244726f6caaf86d1f109e246" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Schwanenstadt, AT<br>     <strong>Temperature:</strong> 13.31 °C<br>     <strong>Humidity:</strong> 79.0%<br>     <strong>Pressure:</strong> 1012.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_9edac00fa668ae1994477f5b915d00c3.setContent(html_9037e334244726f6caaf86d1f109e246);
+            
+        
+
+        marker_b12ea10d4a7886e03dec931863fb6845.bindPopup(popup_9edac00fa668ae1994477f5b915d00c3)
+        ;
+
+        
+    
+    
+            var marker_98356cd35cf005f3c3da68b56bad56ce = L.marker(
+                [46.7656, 15.1922],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_ff938bf54362ecdf14dca67c95195fb5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a0716feb5d4c563711c1624d544f4495 = $(`<div id="html_a0716feb5d4c563711c1624d544f4495" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Schwanberg, AT<br>     <strong>Temperature:</strong> 18.02 °C<br>     <strong>Humidity:</strong> 41.0%<br>     <strong>Pressure:</strong> 1010.0 hPa<br>     <strong>Weather:</strong> few clouds     </div>`)[0];
+                popup_ff938bf54362ecdf14dca67c95195fb5.setContent(html_a0716feb5d4c563711c1624d544f4495);
+            
+        
+
+        marker_98356cd35cf005f3c3da68b56bad56ce.bindPopup(popup_ff938bf54362ecdf14dca67c95195fb5)
+        ;
+
+        
+    
+    
+            var marker_bb5ac490c63a59db91fc4a7670c3ed46 = L.marker(
+                [47.9249, 16.2529],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_14222b9a551d0a7e037a395f261f482e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_70fedb0b5b37494833c3a64cf9a1a7c6 = $(`<div id="html_70fedb0b5b37494833c3a64cf9a1a7c6" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Schönau an der Triesting, AT<br>     <strong>Temperature:</strong> 14.73 °C<br>     <strong>Humidity:</strong> 69.0%<br>     <strong>Pressure:</strong> 1012.0 hPa<br>     <strong>Weather:</strong> light rain     </div>`)[0];
+                popup_14222b9a551d0a7e037a395f261f482e.setContent(html_70fedb0b5b37494833c3a64cf9a1a7c6);
+            
+        
+
+        marker_bb5ac490c63a59db91fc4a7670c3ed46.bindPopup(popup_14222b9a551d0a7e037a395f261f482e)
+        ;
+
+        
+    
+    
+            var marker_d42ec785ed0de91f7d396b658314a14e = L.marker(
+                [47.7179, 16.5113],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_64ed13018d2ed880e4ab96c6cb5edd2e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a913bff5334379d0b71a515864f36c23 = $(`<div id="html_a913bff5334379d0b71a515864f36c23" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Schattendorf, AT<br>     <strong>Temperature:</strong> 14.6 °C<br>     <strong>Humidity:</strong> 60.0%<br>     <strong>Pressure:</strong> 1011.0 hPa<br>     <strong>Weather:</strong> light rain     </div>`)[0];
+                popup_64ed13018d2ed880e4ab96c6cb5edd2e.setContent(html_a913bff5334379d0b71a515864f36c23);
+            
+        
+
+        marker_d42ec785ed0de91f7d396b658314a14e.bindPopup(popup_64ed13018d2ed880e4ab96c6cb5edd2e)
+        ;
+
+        
+    
+    
+            var marker_a1de7777133bea739b115c8062c452f6 = L.marker(
+                [48.4529, 13.4372],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_e1305e3d922cc59a9624c62ea695702b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_42f423db822965e5d774170a0aefa516 = $(`<div id="html_42f423db822965e5d774170a0aefa516" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Schärding, AT<br>     <strong>Temperature:</strong> 13.01 °C<br>     <strong>Humidity:</strong> 89.0%<br>     <strong>Pressure:</strong> 1012.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_e1305e3d922cc59a9624c62ea695702b.setContent(html_42f423db822965e5d774170a0aefa516);
+            
+        
+
+        marker_a1de7777133bea739b115c8062c452f6.bindPopup(popup_e1305e3d922cc59a9624c62ea695702b)
+        ;
+
+        
+    
+    
+            var marker_e75f9bb1c5b99c91fe7b4a824f50a505 = L.marker(
+                [47.2019, 10.8546],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_3274190818b99ff4e0bd4a8cca29ad89 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2e79b33641b8ba42b1e1c966cc8f089a = $(`<div id="html_2e79b33641b8ba42b1e1c966cc8f089a" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Sautens, AT<br>     <strong>Temperature:</strong> 11.27 °C<br>     <strong>Humidity:</strong> 69.0%<br>     <strong>Pressure:</strong> 1010.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_3274190818b99ff4e0bd4a8cca29ad89.setContent(html_2e79b33641b8ba42b1e1c966cc8f089a);
+            
+        
+
+        marker_e75f9bb1c5b99c91fe7b4a824f50a505.bindPopup(popup_3274190818b99ff4e0bd4a8cca29ad89)
+        ;
+
+        
+    
+    
+            var marker_10072b96a77bd88f4cd1b44b6a01513d = L.marker(
+                [47.3139, 13.1345],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_1c99f4c25fd5b8b4b0bbc6c8943b02fc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_334c6dad546090d34856f6bb5b2988b9 = $(`<div id="html_334c6dad546090d34856f6bb5b2988b9" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Sankt Veit im Pongau, AT<br>     <strong>Temperature:</strong> 13.27 °C<br>     <strong>Humidity:</strong> 70.0%<br>     <strong>Pressure:</strong> 1011.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_1c99f4c25fd5b8b4b0bbc6c8943b02fc.setContent(html_334c6dad546090d34856f6bb5b2988b9);
+            
+        
+
+        marker_10072b96a77bd88f4cd1b44b6a01513d.bindPopup(popup_1c99f4c25fd5b8b4b0bbc6c8943b02fc)
+        ;
+
+        
+    
+    
+            var marker_ca7e010bc74181c8433fca5868d485bf = L.marker(
+                [47.5082, 15.3648],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_a5c4ba740d60d2f9dcf70045dd9628b6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_91fd8c7386627f8a949344e85fe25235 = $(`<div id="html_91fd8c7386627f8a949344e85fe25235" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Sankt Lorenzen im Mürztal, AT<br>     <strong>Temperature:</strong> 9.21 °C<br>     <strong>Humidity:</strong> 78.0%<br>     <strong>Pressure:</strong> 1011.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_a5c4ba740d60d2f9dcf70045dd9628b6.setContent(html_91fd8c7386627f8a949344e85fe25235);
+            
+        
+
+        marker_ca7e010bc74181c8433fca5868d485bf.bindPopup(popup_a5c4ba740d60d2f9dcf70045dd9628b6)
+        ;
+
+        
+    
+    
+            var marker_3311dd2aa9b90a7f74356c0b6e2414fd = L.marker(
+                [48.38, 14.132],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_e0adccf0644da9ee60dc0365e0129954 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5efb34e507b65c2cd18c075d251c18b5 = $(`<div id="html_5efb34e507b65c2cd18c075d251c18b5" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Sankt Gotthard im Mühlkreis, AT<br>     <strong>Temperature:</strong> 13.71 °C<br>     <strong>Humidity:</strong> 69.0%<br>     <strong>Pressure:</strong> 1011.0 hPa<br>     <strong>Weather:</strong> broken clouds     </div>`)[0];
+                popup_e0adccf0644da9ee60dc0365e0129954.setContent(html_5efb34e507b65c2cd18c075d251c18b5);
+            
+        
+
+        marker_3311dd2aa9b90a7f74356c0b6e2414fd.bindPopup(popup_e0adccf0644da9ee60dc0365e0129954)
+        ;
+
+        
+    
+    
+            var marker_03e0af48f12e8814d2a7198e1992ff42 = L.marker(
+                [47.7667, 13.3667],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_5516138e45f1f0acadfa670d49e6cd02 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_65f3bf31c5aff479422068155385b539 = $(`<div id="html_65f3bf31c5aff479422068155385b539" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> St. Gilgen, AT<br>     <strong>Temperature:</strong> 13.16 °C<br>     <strong>Humidity:</strong> 83.0%<br>     <strong>Pressure:</strong> 1012.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_5516138e45f1f0acadfa670d49e6cd02.setContent(html_65f3bf31c5aff479422068155385b539);
+            
+        
+
+        marker_03e0af48f12e8814d2a7198e1992ff42.bindPopup(popup_5516138e45f1f0acadfa670d49e6cd02)
+        ;
+
+        
+    
+    
+            var marker_82271270cf09f4a30bc00e8664842a9a = L.marker(
+                [48.2782, 14.2168],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_015184b239d4b2e5167652fecf078484 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c68a2e6ffff46fd6b0e37e5be8a6524c = $(`<div id="html_c68a2e6ffff46fd6b0e37e5be8a6524c" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Rufling, AT<br>     <strong>Temperature:</strong> 12.75 °C<br>     <strong>Humidity:</strong> 68.0%<br>     <strong>Pressure:</strong> 1011.0 hPa<br>     <strong>Weather:</strong> broken clouds     </div>`)[0];
+                popup_015184b239d4b2e5167652fecf078484.setContent(html_c68a2e6ffff46fd6b0e37e5be8a6524c);
+            
+        
+
+        marker_82271270cf09f4a30bc00e8664842a9a.bindPopup(popup_015184b239d4b2e5167652fecf078484)
+        ;
+
+        
+    
+    
+            var marker_9b09884b2b360a08e74dd6bb2fab9e98 = L.marker(
+                [47.2167, 9.7],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_0fc5a691d3634c1736dde528327276b0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9fa9affab70dd6be524dc0ee3d948f16 = $(`<div id="html_9fa9affab70dd6be524dc0ee3d948f16" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Röns, AT<br>     <strong>Temperature:</strong> 14.48 °C<br>     <strong>Humidity:</strong> 58.0%<br>     <strong>Pressure:</strong> 1011.0 hPa<br>     <strong>Weather:</strong> broken clouds     </div>`)[0];
+                popup_0fc5a691d3634c1736dde528327276b0.setContent(html_9fa9affab70dd6be524dc0ee3d948f16);
+            
+        
+
+        marker_9b09884b2b360a08e74dd6bb2fab9e98.bindPopup(popup_0fc5a691d3634c1736dde528327276b0)
+        ;
+
+        
+    
+    
+            var marker_4388ac51a91e40c0624fcd2cf19228b4 = L.marker(
+                [48.1312, 16.4673],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_626335f95b03f0c3616cc7b4b9f56fcd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a5cdc45fe213a83ef5b24b672d3ac380 = $(`<div id="html_a5cdc45fe213a83ef5b24b672d3ac380" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Rannersdorf, AT<br>     <strong>Temperature:</strong> 16.54 °C<br>     <strong>Humidity:</strong> 60.0%<br>     <strong>Pressure:</strong> 1011.0 hPa<br>     <strong>Weather:</strong> light rain     </div>`)[0];
+                popup_626335f95b03f0c3616cc7b4b9f56fcd.setContent(html_a5cdc45fe213a83ef5b24b672d3ac380);
+            
+        
+
+        marker_4388ac51a91e40c0624fcd2cf19228b4.bindPopup(popup_626335f95b03f0c3616cc7b4b9f56fcd)
+        ;
+
+        
+    
+    
+            var marker_a32996260c590721bb45d39943cdebd7 = L.marker(
+                [46.8468, 15.5907],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_b86f1d86e5818d1b0a30169c09343ed4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_60f96855b4b3c54806b496735c77b255 = $(`<div id="html_60f96855b4b3c54806b496735c77b255" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Ragnitz, AT<br>     <strong>Temperature:</strong> 19.25 °C<br>     <strong>Humidity:</strong> 43.0%<br>     <strong>Pressure:</strong> 1010.0 hPa<br>     <strong>Weather:</strong> broken clouds     </div>`)[0];
+                popup_b86f1d86e5818d1b0a30169c09343ed4.setContent(html_60f96855b4b3c54806b496735c77b255);
+            
+        
+
+        marker_a32996260c590721bb45d39943cdebd7.bindPopup(popup_b86f1d86e5818d1b0a30169c09343ed4)
+        ;
+
+        
+    
+    
+            var marker_311726829f3a92a4c0aef496a3df04bc = L.marker(
+                [47.2226, 14.5992],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_c5e02b1f23d5e5f579f8c1418cb153d6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_85b240f627aa740929e227f77c15bbdb = $(`<div id="html_85b240f627aa740929e227f77c15bbdb" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Pöls, AT<br>     <strong>Temperature:</strong> 13.31 °C<br>     <strong>Humidity:</strong> 44.0%<br>     <strong>Pressure:</strong> 1010.0 hPa<br>     <strong>Weather:</strong> broken clouds     </div>`)[0];
+                popup_c5e02b1f23d5e5f579f8c1418cb153d6.setContent(html_85b240f627aa740929e227f77c15bbdb);
+            
+        
+
+        marker_311726829f3a92a4c0aef496a3df04bc.bindPopup(popup_c5e02b1f23d5e5f579f8c1418cb153d6)
+        ;
+
+        
+    
+    
+            var marker_3cd254882bb564675ee81aae360eafa2 = L.marker(
+                [48.3217, 14.3409],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_264a5ee43fbc3d27c3257ab92415ce60 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c53cf4d515edb9cfc7b4136e4b242620 = $(`<div id="html_c53cf4d515edb9cfc7b4136e4b242620" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Plesching, AT<br>     <strong>Temperature:</strong> 13.74 °C<br>     <strong>Humidity:</strong> 70.0%<br>     <strong>Pressure:</strong> 1011.0 hPa<br>     <strong>Weather:</strong> broken clouds     </div>`)[0];
+                popup_264a5ee43fbc3d27c3257ab92415ce60.setContent(html_c53cf4d515edb9cfc7b4136e4b242620);
+            
+        
+
+        marker_3cd254882bb564675ee81aae360eafa2.bindPopup(popup_264a5ee43fbc3d27c3257ab92415ce60)
+        ;
+
+        
+    
+    
+            var marker_71f6c827e52d0872cdfe9211161f16ff = L.marker(
+                [47.7153, 16.9061],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_eaee6c86d4f24068d86da03b2a291ec8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cb1e5ae3a7abb790ed9a657ac889c899 = $(`<div id="html_cb1e5ae3a7abb790ed9a657ac889c899" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Pamhagen, AT<br>     <strong>Temperature:</strong> 15.87 °C<br>     <strong>Humidity:</strong> 58.0%<br>     <strong>Pressure:</strong> 1011.0 hPa<br>     <strong>Weather:</strong> clear sky     </div>`)[0];
+                popup_eaee6c86d4f24068d86da03b2a291ec8.setContent(html_cb1e5ae3a7abb790ed9a657ac889c899);
+            
+        
+
+        marker_71f6c827e52d0872cdfe9211161f16ff.bindPopup(popup_eaee6c86d4f24068d86da03b2a291ec8)
+        ;
+
+        
+    
+    
+            var marker_d26fb7646c79326e080e9ddad7a1100e = L.marker(
+                [53.6259, 10.0315],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_6edd3940f7ce798f18bb293e6e3ec878 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e5dc526bc9861030f31bc344324516e0 = $(`<div id="html_e5dc526bc9861030f31bc344324516e0" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Ohlsdorf, DE<br>     <strong>Temperature:</strong> 15.03 °C<br>     <strong>Humidity:</strong> 56.0%<br>     <strong>Pressure:</strong> 1012.0 hPa<br>     <strong>Weather:</strong> few clouds     </div>`)[0];
+                popup_6edd3940f7ce798f18bb293e6e3ec878.setContent(html_e5dc526bc9861030f31bc344324516e0);
+            
+        
+
+        marker_d26fb7646c79326e080e9ddad7a1100e.bindPopup(popup_6edd3940f7ce798f18bb293e6e3ec878)
+        ;
+
+        
+    
+    
+            var marker_73648f0f7ad32725f5cef90103325cd0 = L.marker(
+                [48.2712, 15.6905],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_d686a001111b4a5ffba3c46d69fb92e0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6198bfbf90c6b84e0d0ce750ea705504 = $(`<div id="html_6198bfbf90c6b84e0d0ce750ea705504" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Oberndorf in der Ebene, AT<br>     <strong>Temperature:</strong> 14.11 °C<br>     <strong>Humidity:</strong> 75.0%<br>     <strong>Pressure:</strong> 1011.0 hPa<br>     <strong>Weather:</strong> heavy intensity rain     </div>`)[0];
+                popup_d686a001111b4a5ffba3c46d69fb92e0.setContent(html_6198bfbf90c6b84e0d0ce750ea705504);
+            
+        
+
+        marker_73648f0f7ad32725f5cef90103325cd0.bindPopup(popup_d686a001111b4a5ffba3c46d69fb92e0)
+        ;
+
+        
+    
+    
+            var marker_dab836b99a189de3a01542bc4b246f64 = L.marker(
+                [47.7053, 13.1092],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_05636bf8dc2e36c1775835991817e71d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_19c98640bccf52a269f364a5be2e4846 = $(`<div id="html_19c98640bccf52a269f364a5be2e4846" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Oberalm, AT<br>     <strong>Temperature:</strong> 11.45 °C<br>     <strong>Humidity:</strong> 76.0%<br>     <strong>Pressure:</strong> 1013.0 hPa<br>     <strong>Weather:</strong> broken clouds     </div>`)[0];
+                popup_05636bf8dc2e36c1775835991817e71d.setContent(html_19c98640bccf52a269f364a5be2e4846);
+            
+        
+
+        marker_dab836b99a189de3a01542bc4b246f64.bindPopup(popup_05636bf8dc2e36c1775835991817e71d)
+        ;
+
+        
+    
+    
+            var marker_440dda615e445af70497d2724fd87998 = L.marker(
+                [47.116, 15.7467],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_4a6078948629a7c9ee771ca5d098e106 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_16c0f7de03799f5c6aef273a38ed4d10 = $(`<div id="html_16c0f7de03799f5c6aef273a38ed4d10" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Nitscha, AT<br>     <strong>Temperature:</strong> 18.21 °C<br>     <strong>Humidity:</strong> 50.0%<br>     <strong>Pressure:</strong> 1010.0 hPa<br>     <strong>Weather:</strong> scattered clouds     </div>`)[0];
+                popup_4a6078948629a7c9ee771ca5d098e106.setContent(html_16c0f7de03799f5c6aef273a38ed4d10);
+            
+        
+
+        marker_440dda615e445af70497d2724fd87998.bindPopup(popup_4a6078948629a7c9ee771ca5d098e106)
+        ;
+
+        
+    
+    
+            var marker_5f726e0fbc824e9eb8dd6d92a6b39eaa = L.marker(
+                [48.0494, 14.8658],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_cd0491f00cd504113f1dc0b2dd0d4ee9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fa4f595b90bed82dd788fe9a7f91f87d = $(`<div id="html_fa4f595b90bed82dd788fe9a7f91f87d" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Neuhofen an der Ybbs, AT<br>     <strong>Temperature:</strong> 13.59 °C<br>     <strong>Humidity:</strong> 69.0%<br>     <strong>Pressure:</strong> 1012.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_cd0491f00cd504113f1dc0b2dd0d4ee9.setContent(html_fa4f595b90bed82dd788fe9a7f91f87d);
+            
+        
+
+        marker_5f726e0fbc824e9eb8dd6d92a6b39eaa.bindPopup(popup_cd0491f00cd504113f1dc0b2dd0d4ee9)
+        ;
+
+        
+    
+    
+            var marker_181b9abf96c74a65f0c56d824310b9a9 = L.marker(
+                [47.6727, 15.5666],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_026c55cea64b0e8a0788c4c29d615cac = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_22f0e9cc4431a9baeda1e63821ae2ece = $(`<div id="html_22f0e9cc4431a9baeda1e63821ae2ece" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Neuberg an der Mürz, AT<br>     <strong>Temperature:</strong> 7.41 °C<br>     <strong>Humidity:</strong> 92.0%<br>     <strong>Pressure:</strong> 1012.0 hPa<br>     <strong>Weather:</strong> light rain     </div>`)[0];
+                popup_026c55cea64b0e8a0788c4c29d615cac.setContent(html_22f0e9cc4431a9baeda1e63821ae2ece);
+            
+        
+
+        marker_181b9abf96c74a65f0c56d824310b9a9.bindPopup(popup_026c55cea64b0e8a0788c4c29d615cac)
+        ;
+
+        
+    
+    
+            var marker_3f54f907c638dab864193096e8bb9806 = L.marker(
+                [47.3324, 10.8171],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_024c0634f7b7adc48c695ffeb7a614bf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_23a0eb8966478d9533bad0a83d204e81 = $(`<div id="html_23a0eb8966478d9533bad0a83d204e81" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Nassereith, AT<br>     <strong>Temperature:</strong> 6.4 °C<br>     <strong>Humidity:</strong> 80.0%<br>     <strong>Pressure:</strong> 1012.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_024c0634f7b7adc48c695ffeb7a614bf.setContent(html_23a0eb8966478d9533bad0a83d204e81);
+            
+        
+
+        marker_3f54f907c638dab864193096e8bb9806.bindPopup(popup_024c0634f7b7adc48c695ffeb7a614bf)
+        ;
+
+        
+    
+    
+            var marker_8e2a446da8014c755342070eeda75cbf = L.marker(
+                [48.25, 12.5333],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_75b022e0c4e08ca2f3d86ae67c5b78fb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7bc731399491ef9b987445866c10e2fe = $(`<div id="html_7bc731399491ef9b987445866c10e2fe" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Mühldorf, DE<br>     <strong>Temperature:</strong> 13.66 °C<br>     <strong>Humidity:</strong> 99.0%<br>     <strong>Pressure:</strong> 1013.0 hPa<br>     <strong>Weather:</strong> broken clouds     </div>`)[0];
+                popup_75b022e0c4e08ca2f3d86ae67c5b78fb.setContent(html_7bc731399491ef9b987445866c10e2fe);
+            
+        
+
+        marker_8e2a446da8014c755342070eeda75cbf.bindPopup(popup_75b022e0c4e08ca2f3d86ae67c5b78fb)
+        ;
+
+        
+    
+    
+            var marker_abb2349e47338eea8c10bb945595bd8d = L.marker(
+                [48.3329, 16.1554],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_e477648a47a9eea82f2fe4ae6eb282de = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2cb40d67c1fa5586dc126ba13257e8b4 = $(`<div id="html_2cb40d67c1fa5586dc126ba13257e8b4" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Muckendorf an der Donau, AT<br>     <strong>Temperature:</strong> 15.69 °C<br>     <strong>Humidity:</strong> 66.0%<br>     <strong>Pressure:</strong> 1011.0 hPa<br>     <strong>Weather:</strong> light intensity shower rain     </div>`)[0];
+                popup_e477648a47a9eea82f2fe4ae6eb282de.setContent(html_2cb40d67c1fa5586dc126ba13257e8b4);
+            
+        
+
+        marker_abb2349e47338eea8c10bb945595bd8d.bindPopup(popup_e477648a47a9eea82f2fe4ae6eb282de)
+        ;
+
+        
+    
+    
+            var marker_e7e957c444cabc52cdc66ef9b82c50ac = L.marker(
+                [53.6333, 10.6833],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_4d55547ac8d136a8a7b22448dfce1943 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_571337de7e6bfb40b093e0a26ff8626c = $(`<div id="html_571337de7e6bfb40b093e0a26ff8626c" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Mölln, DE<br>     <strong>Temperature:</strong> 15.69 °C<br>     <strong>Humidity:</strong> 62.0%<br>     <strong>Pressure:</strong> 1012.0 hPa<br>     <strong>Weather:</strong> clear sky     </div>`)[0];
+                popup_4d55547ac8d136a8a7b22448dfce1943.setContent(html_571337de7e6bfb40b093e0a26ff8626c);
+            
+        
+
+        marker_e7e957c444cabc52cdc66ef9b82c50ac.bindPopup(popup_4d55547ac8d136a8a7b22448dfce1943)
+        ;
+
+        
+    
+    
+            var marker_8d8f617f841a2119d904704b137a3297 = L.marker(
+                [47.1667, 11.8667],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_863746833d297a7f03ef1901b0b78392 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2a44f70920dde118552436b3f794297d = $(`<div id="html_2a44f70920dde118552436b3f794297d" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Mayrhofen, AT<br>     <strong>Temperature:</strong> 13.86 °C<br>     <strong>Humidity:</strong> 57.0%<br>     <strong>Pressure:</strong> 1011.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_863746833d297a7f03ef1901b0b78392.setContent(html_2a44f70920dde118552436b3f794297d);
+            
+        
+
+        marker_8d8f617f841a2119d904704b137a3297.bindPopup(popup_863746833d297a7f03ef1901b0b78392)
+        ;
+
+        
+    
+    
+            var marker_dcba5de3c43a5aaaec302e7304cba3fe = L.marker(
+                [47.8633, 16.1124],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_88fe7e9283a0cf4d8bb9848f756627d5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f10bc3be57ee0dd9cb2048ee013baea3 = $(`<div id="html_f10bc3be57ee0dd9cb2048ee013baea3" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Markt Piesting, AT<br>     <strong>Temperature:</strong> 12.84 °C<br>     <strong>Humidity:</strong> 75.0%<br>     <strong>Pressure:</strong> 1012.0 hPa<br>     <strong>Weather:</strong> broken clouds     </div>`)[0];
+                popup_88fe7e9283a0cf4d8bb9848f756627d5.setContent(html_f10bc3be57ee0dd9cb2048ee013baea3);
+            
+        
+
+        marker_dcba5de3c43a5aaaec302e7304cba3fe.bindPopup(popup_88fe7e9283a0cf4d8bb9848f756627d5)
+        ;
+
+        
+    
+    
+            var marker_c0353c6f035281aabc803b9e9fe7cec9 = L.marker(
+                [47.1804, 13.7247],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_e3fb033ae2256bf9084fd76bb4a3b9bd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b3b6cdc99745bde797638ccc68dbaa4e = $(`<div id="html_b3b6cdc99745bde797638ccc68dbaa4e" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Mariapfarr, AT<br>     <strong>Temperature:</strong> 8.08 °C<br>     <strong>Humidity:</strong> 71.0%<br>     <strong>Pressure:</strong> 1011.0 hPa<br>     <strong>Weather:</strong> broken clouds     </div>`)[0];
+                popup_e3fb033ae2256bf9084fd76bb4a3b9bd.setContent(html_b3b6cdc99745bde797638ccc68dbaa4e);
+            
+        
+
+        marker_c0353c6f035281aabc803b9e9fe7cec9.bindPopup(popup_e3fb033ae2256bf9084fd76bb4a3b9bd)
+        ;
+
+        
+    
+    
+            var marker_a07afc325611bc816c19b2f2c3048f8a = L.marker(
+                [48.1115, 16.6856],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_fa16054f8d21ba2743e00b5e43ebdfb7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0d50396ddfac38b4506c173057b9f667 = $(`<div id="html_0d50396ddfac38b4506c173057b9f667" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Maria Ellend, AT<br>     <strong>Temperature:</strong> 16.16 °C<br>     <strong>Humidity:</strong> 59.0%<br>     <strong>Pressure:</strong> 1011.0 hPa<br>     <strong>Weather:</strong> light rain     </div>`)[0];
+                popup_fa16054f8d21ba2743e00b5e43ebdfb7.setContent(html_0d50396ddfac38b4506c173057b9f667);
+            
+        
+
+        marker_a07afc325611bc816c19b2f2c3048f8a.bindPopup(popup_fa16054f8d21ba2743e00b5e43ebdfb7)
+        ;
+
+        
+    
+    
+            var marker_f97191404f51d1e1c589f300f924060b = L.marker(
+                [48.2729, 14.4117],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_7a476f8c0d6134b9e40a4fe91ce02e6a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e1ee7e4e5cf3ceb047b7824463e385ad = $(`<div id="html_e1ee7e4e5cf3ceb047b7824463e385ad" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Luftenberg an der Donau, AT<br>     <strong>Temperature:</strong> 13.56 °C<br>     <strong>Humidity:</strong> 69.0%<br>     <strong>Pressure:</strong> 1011.0 hPa<br>     <strong>Weather:</strong> broken clouds     </div>`)[0];
+                popup_7a476f8c0d6134b9e40a4fe91ce02e6a.setContent(html_e1ee7e4e5cf3ceb047b7824463e385ad);
+            
+        
+
+        marker_f97191404f51d1e1c589f300f924060b.bindPopup(popup_7a476f8c0d6134b9e40a4fe91ce02e6a)
+        ;
+
+        
+    
+    
+            var marker_2d6eb01c25eb0926978e3d83b005adcb = L.marker(
+                [47.436, 12.7156],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_2c7841722eb23d24b594b66428d79e3e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ddde8f2bc99589b2ec1f6a7138b1b527 = $(`<div id="html_ddde8f2bc99589b2ec1f6a7138b1b527" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Leogang, AT<br>     <strong>Temperature:</strong> 11.75 °C<br>     <strong>Humidity:</strong> 52.0%<br>     <strong>Pressure:</strong> 1010.0 hPa<br>     <strong>Weather:</strong> broken clouds     </div>`)[0];
+                popup_2c7841722eb23d24b594b66428d79e3e.setContent(html_ddde8f2bc99589b2ec1f6a7138b1b527);
+            
+        
+
+        marker_2d6eb01c25eb0926978e3d83b005adcb.bindPopup(popup_2c7841722eb23d24b594b66428d79e3e)
+        ;
+
+        
+    
+    
+            var marker_03c498f2e86751ecfc2e8841e3c109fe = L.marker(
+                [47.0124, 15.2125],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_65a323103cbeb4265f3ad55768253ad1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ee8ef67c45c4f0aac7faa963ba5bcbcc = $(`<div id="html_ee8ef67c45c4f0aac7faa963ba5bcbcc" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Krottendorf bei Ligist, AT<br>     <strong>Temperature:</strong> 18.44 °C<br>     <strong>Humidity:</strong> 43.0%<br>     <strong>Pressure:</strong> 1010.0 hPa<br>     <strong>Weather:</strong> broken clouds     </div>`)[0];
+                popup_65a323103cbeb4265f3ad55768253ad1.setContent(html_ee8ef67c45c4f0aac7faa963ba5bcbcc);
+            
+        
+
+        marker_03c498f2e86751ecfc2e8841e3c109fe.bindPopup(popup_65a323103cbeb4265f3ad55768253ad1)
+        ;
+
+        
+    
+    
+            var marker_eb16cef71a527c38100e18d09ed95504 = L.marker(
+                [47.8068, 13.156],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_802ea8b707d2a6c819d91f146d0e84ea = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_12ffcd7af95942215a11777587773804 = $(`<div id="html_12ffcd7af95942215a11777587773804" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Koppl, AT<br>     <strong>Temperature:</strong> 11.69 °C<br>     <strong>Humidity:</strong> 99.0%<br>     <strong>Pressure:</strong> 1013.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_802ea8b707d2a6c819d91f146d0e84ea.setContent(html_12ffcd7af95942215a11777587773804);
+            
+        
+
+        marker_eb16cef71a527c38100e18d09ed95504.bindPopup(popup_802ea8b707d2a6c819d91f146d0e84ea)
+        ;
+
+        
+    
+    
+            var marker_cd8c3cf24f1c20e8598fe80fb3e2d75f = L.marker(
+                [46.7651, 15.9734],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_1e6d6f5ceea1b9e74fec3d56e04e81d9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fb5de6702c8ffa59fc915176f04b3c55 = $(`<div id="html_fb5de6702c8ffa59fc915176f04b3c55" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Klöch, AT<br>     <strong>Temperature:</strong> 19.54 °C<br>     <strong>Humidity:</strong> 43.0%<br>     <strong>Pressure:</strong> 1010.0 hPa<br>     <strong>Weather:</strong> broken clouds     </div>`)[0];
+                popup_1e6d6f5ceea1b9e74fec3d56e04e81d9.setContent(html_fb5de6702c8ffa59fc915176f04b3c55);
+            
+        
+
+        marker_cd8c3cf24f1c20e8598fe80fb3e2d75f.bindPopup(popup_1e6d6f5ceea1b9e74fec3d56e04e81d9)
+        ;
+
+        
+    
+    
+            var marker_1797bbed69841cd0bb5130a6a62265b2 = L.marker(
+                [48.0725, 15.3223],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_eb5c79ed20e7043ec1640ff30f9debf5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8a348490965a539384271ccf13ead371 = $(`<div id="html_8a348490965a539384271ccf13ead371" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Kirnberg an der Mank, AT<br>     <strong>Temperature:</strong> 13.86 °C<br>     <strong>Humidity:</strong> 69.0%<br>     <strong>Pressure:</strong> 1011.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_eb5c79ed20e7043ec1640ff30f9debf5.setContent(html_8a348490965a539384271ccf13ead371);
+            
+        
+
+        marker_1797bbed69841cd0bb5130a6a62265b2.bindPopup(popup_eb5c79ed20e7043ec1640ff30f9debf5)
+        ;
+
+        
+    
+    
+            var marker_60d833a8062d2b437792b6cc3622adec = L.marker(
+                [48.9323, 15.235],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_e9e8def76d466a5af7bfe51b1cdd0e44 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bac84d812dbf7a527e6f786260a486ec = $(`<div id="html_bac84d812dbf7a527e6f786260a486ec" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Kautzen, AT<br>     <strong>Temperature:</strong> 13.09 °C<br>     <strong>Humidity:</strong> 72.0%<br>     <strong>Pressure:</strong> 1011.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_e9e8def76d466a5af7bfe51b1cdd0e44.setContent(html_bac84d812dbf7a527e6f786260a486ec);
+            
+        
+
+        marker_60d833a8062d2b437792b6cc3622adec.bindPopup(popup_e9e8def76d466a5af7bfe51b1cdd0e44)
+        ;
+
+        
+    
+    
+            var marker_103bf428423ce6e975236e6030276371 = L.marker(
+                [47.582, 15.653],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_017a713221168ff4676c24e0b260965a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_502eb32f71ed47fcde9781428ac0d57c = $(`<div id="html_502eb32f71ed47fcde9781428ac0d57c" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Hönigsberg, AT<br>     <strong>Temperature:</strong> 10.13 °C<br>     <strong>Humidity:</strong> 83.0%<br>     <strong>Pressure:</strong> 1011.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_017a713221168ff4676c24e0b260965a.setContent(html_502eb32f71ed47fcde9781428ac0d57c);
+            
+        
+
+        marker_103bf428423ce6e975236e6030276371.bindPopup(popup_017a713221168ff4676c24e0b260965a)
+        ;
+
+        
+    
+    
+            var marker_2c2476bccd828d58ce4a1f77b73d4ad9 = L.marker(
+                [46.8, 15.9333],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_e4d81dd81dfcd9d2f0d3aa3e95640a8c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2eded31e020d05a64b3608f2ef8cc06a = $(`<div id="html_2eded31e020d05a64b3608f2ef8cc06a" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Hof bei Straden, AT<br>     <strong>Temperature:</strong> 19.49 °C<br>     <strong>Humidity:</strong> 48.0%<br>     <strong>Pressure:</strong> 1010.0 hPa<br>     <strong>Weather:</strong> broken clouds     </div>`)[0];
+                popup_e4d81dd81dfcd9d2f0d3aa3e95640a8c.setContent(html_2eded31e020d05a64b3608f2ef8cc06a);
+            
+        
+
+        marker_2c2476bccd828d58ce4a1f77b73d4ad9.bindPopup(popup_e4d81dd81dfcd9d2f0d3aa3e95640a8c)
+        ;
+
+        
+    
+    
+            var marker_38c9b9317e6fc624103ac19a79f672eb = L.marker(
+                [48.4101, 16.6232],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_ebdacc5b52ef48250d4b6de5c8dfe043 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6854467bc996793cbd71ba377509f8f0 = $(`<div id="html_6854467bc996793cbd71ba377509f8f0" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Groß-Schweinbarth, AT<br>     <strong>Temperature:</strong> 15.4 °C<br>     <strong>Humidity:</strong> 56.0%<br>     <strong>Pressure:</strong> 1011.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_ebdacc5b52ef48250d4b6de5c8dfe043.setContent(html_6854467bc996793cbd71ba377509f8f0);
+            
+        
+
+        marker_38c9b9317e6fc624103ac19a79f672eb.bindPopup(popup_ebdacc5b52ef48250d4b6de5c8dfe043)
+        ;
+
+        
+    
+    
+            var marker_f97430af66d9538f7431e6549e3a5310 = L.marker(
+                [47.6167, 10.3333],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_d35c9992ac77def91dbc986cfe635f17 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_02e4f6642d1c2525fd074e3cfec9da9c = $(`<div id="html_02e4f6642d1c2525fd074e3cfec9da9c" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Großdorf, DE<br>     <strong>Temperature:</strong> 8.99 °C<br>     <strong>Humidity:</strong> 71.0%<br>     <strong>Pressure:</strong> 1013.0 hPa<br>     <strong>Weather:</strong> moderate rain     </div>`)[0];
+                popup_d35c9992ac77def91dbc986cfe635f17.setContent(html_02e4f6642d1c2525fd074e3cfec9da9c);
+            
+        
+
+        marker_f97430af66d9538f7431e6549e3a5310.bindPopup(popup_d35c9992ac77def91dbc986cfe635f17)
+        ;
+
+        
+    
+    
+            var marker_9f7ef91721e4b9b96daacb0123535ece = L.marker(
+                [47.2398, 9.6333],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_6564239afd1e32f51e8b123a9d295c50 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e3b1ccd975d8c0a8f20d37f7de47bdd9 = $(`<div id="html_e3b1ccd975d8c0a8f20d37f7de47bdd9" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Göfis, AT<br>     <strong>Temperature:</strong> 14.31 °C<br>     <strong>Humidity:</strong> 60.0%<br>     <strong>Pressure:</strong> 1011.0 hPa<br>     <strong>Weather:</strong> broken clouds     </div>`)[0];
+                popup_6564239afd1e32f51e8b123a9d295c50.setContent(html_e3b1ccd975d8c0a8f20d37f7de47bdd9);
+            
+        
+
+        marker_9f7ef91721e4b9b96daacb0123535ece.bindPopup(popup_6564239afd1e32f51e8b123a9d295c50)
+        ;
+
+        
+    
+    
+            var marker_f2572a5af36adc7389a5e11845916649 = L.marker(
+                [48.7683, 14.9808],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_a47f69a93dfdb71b9ecfb4b0fd6f486e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9fa1eb4ac541d45c9c529e7721e316ec = $(`<div id="html_9fa1eb4ac541d45c9c529e7721e316ec" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Gmünd, AT<br>     <strong>Temperature:</strong> 12.32 °C<br>     <strong>Humidity:</strong> 76.0%<br>     <strong>Pressure:</strong> 1011.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_a47f69a93dfdb71b9ecfb4b0fd6f486e.setContent(html_9fa1eb4ac541d45c9c529e7721e316ec);
+            
+        
+
+        marker_f2572a5af36adc7389a5e11845916649.bindPopup(popup_a47f69a93dfdb71b9ecfb4b0fd6f486e)
+        ;
+
+        
+    
+    
+            var marker_af129c5203fe0ed34aaedb2c6c8bba04 = L.marker(
+                [47.2183, 14.6819],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_7c4f1afb0ecced93132aacbe7d879bbe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_50068ec375202418787a849864946103 = $(`<div id="html_50068ec375202418787a849864946103" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Fohnsdorf, AT<br>     <strong>Temperature:</strong> 12.54 °C<br>     <strong>Humidity:</strong> 44.0%<br>     <strong>Pressure:</strong> 1010.0 hPa<br>     <strong>Weather:</strong> broken clouds     </div>`)[0];
+                popup_7c4f1afb0ecced93132aacbe7d879bbe.setContent(html_50068ec375202418787a849864946103);
+            
+        
+
+        marker_af129c5203fe0ed34aaedb2c6c8bba04.bindPopup(popup_7c4f1afb0ecced93132aacbe7d879bbe)
+        ;
+
+        
+    
+    
+            var marker_08b402501ab4f8a0af7a0d954d99ab92 = L.marker(
+                [46.7567, 13.651],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_b8ef06b52cc24655b29d2c45d22b3a58 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3b17271810b68d0f3c7da8a97a63278d = $(`<div id="html_3b17271810b68d0f3c7da8a97a63278d" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Ferndorf, AT<br>     <strong>Temperature:</strong> 13.23 °C<br>     <strong>Humidity:</strong> 60.0%<br>     <strong>Pressure:</strong> 1010.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_b8ef06b52cc24655b29d2c45d22b3a58.setContent(html_3b17271810b68d0f3c7da8a97a63278d);
+            
+        
+
+        marker_08b402501ab4f8a0af7a0d954d99ab92.bindPopup(popup_b8ef06b52cc24655b29d2c45d22b3a58)
+        ;
+
+        
+    
+    
+            var marker_f017028cdc0bc472d6c396e6d716b538 = L.marker(
+                [48.0165, 13.0198],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_cd4edc9ad9a447ff8749f0dfd3078603 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3fae0e4cc8ef46dc4ede11be9f5b5bb7 = $(`<div id="html_3fae0e4cc8ef46dc4ede11be9f5b5bb7" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Dorfbeuern, AT<br>     <strong>Temperature:</strong> 13.73 °C<br>     <strong>Humidity:</strong> 99.0%<br>     <strong>Pressure:</strong> 1013.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_cd4edc9ad9a447ff8749f0dfd3078603.setContent(html_3fae0e4cc8ef46dc4ede11be9f5b5bb7);
+            
+        
+
+        marker_f017028cdc0bc472d6c396e6d716b538.bindPopup(popup_cd4edc9ad9a447ff8749f0dfd3078603)
+        ;
+
+        
+    
+    
+            var marker_7cc38bc5a538b7f9d1987db694b58961 = L.marker(
+                [48.0838, 14.4282],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_86e61396d413c99a63402b738cb0adaa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0c8e12695e1f52d2843fd7c5bc293b91 = $(`<div id="html_0c8e12695e1f52d2843fd7c5bc293b91" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Dietachdorf, AT<br>     <strong>Temperature:</strong> 12.6 °C<br>     <strong>Humidity:</strong> 79.0%<br>     <strong>Pressure:</strong> 1012.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_86e61396d413c99a63402b738cb0adaa.setContent(html_0c8e12695e1f52d2843fd7c5bc293b91);
+            
+        
+
+        marker_7cc38bc5a538b7f9d1987db694b58961.bindPopup(popup_86e61396d413c99a63402b738cb0adaa)
+        ;
+
+        
+    
+    
+            var marker_431bc54f1821636eae480f0514891943 = L.marker(
+                [48.4316, 10.4099],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_075232535dd964e8da9b530c82d2cd44 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fdbd826359e330ee81b88bf5c3a60ee9 = $(`<div id="html_fdbd826359e330ee81b88bf5c3a60ee9" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Burgau, DE<br>     <strong>Temperature:</strong> 12.19 °C<br>     <strong>Humidity:</strong> 84.0%<br>     <strong>Pressure:</strong> 1013.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_075232535dd964e8da9b530c82d2cd44.setContent(html_fdbd826359e330ee81b88bf5c3a60ee9);
+            
+        
+
+        marker_431bc54f1821636eae480f0514891943.bindPopup(popup_075232535dd964e8da9b530c82d2cd44)
+        ;
+
+        
+    
+    
+            var marker_13999091e0cb11f787514aad9395e366 = L.marker(
+                [47.8245, 16.1601],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_377d8cebfca6b6468fb998a80540da62 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8cb19b63baafd82af21bc757bce3275b = $(`<div id="html_8cb19b63baafd82af21bc757bce3275b" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Brunn an der Schneebergbahn, AT<br>     <strong>Temperature:</strong> 14.39 °C<br>     <strong>Humidity:</strong> 75.0%<br>     <strong>Pressure:</strong> 1012.0 hPa<br>     <strong>Weather:</strong> broken clouds     </div>`)[0];
+                popup_377d8cebfca6b6468fb998a80540da62.setContent(html_8cb19b63baafd82af21bc757bce3275b);
+            
+        
+
+        marker_13999091e0cb11f787514aad9395e366.bindPopup(popup_377d8cebfca6b6468fb998a80540da62)
+        ;
+
+        
+    
+    
+            var marker_c608dbef5d65f9754b6e4fec9faa48b9 = L.marker(
+                [47.4036, 15.2952],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_efbde6ee0a1930a1c6e9bcdebfa7e813 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5171733906e29f1ed844b0e0d8f4f645 = $(`<div id="html_5171733906e29f1ed844b0e0d8f4f645" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Bruck an der Mur, AT<br>     <strong>Temperature:</strong> 15.3 °C<br>     <strong>Humidity:</strong> 76.0%<br>     <strong>Pressure:</strong> 1011.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_efbde6ee0a1930a1c6e9bcdebfa7e813.setContent(html_5171733906e29f1ed844b0e0d8f4f645);
+            
+        
+
+        marker_c608dbef5d65f9754b6e4fec9faa48b9.bindPopup(popup_efbde6ee0a1930a1c6e9bcdebfa7e813)
+        ;
+
+        
+    
+    
+            var marker_9981a5e01dce2ac2c282333688d7ab4f = L.marker(
+                [47.4081, 10.7474],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_178da7e47aebf310ef10ca7ab671087d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f09d0ea9046a78e9ba3297163faecf2d = $(`<div id="html_f09d0ea9046a78e9ba3297163faecf2d" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Berwang, AT<br>     <strong>Temperature:</strong> 1.04 °C<br>     <strong>Humidity:</strong> 90.0%<br>     <strong>Pressure:</strong> 1013.0 hPa<br>     <strong>Weather:</strong> light snow     </div>`)[0];
+                popup_178da7e47aebf310ef10ca7ab671087d.setContent(html_f09d0ea9046a78e9ba3297163faecf2d);
+            
+        
+
+        marker_9981a5e01dce2ac2c282333688d7ab4f.bindPopup(popup_178da7e47aebf310ef10ca7ab671087d)
+        ;
+
+        
+    
+    
+            var marker_bf0d85d36d3c2a02fc93d477ba7c5438 = L.marker(
+                [47.7111, 13.6189],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_2884bcd331c45ebed45b14177d4778f9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9415a3f3568d43954a0cfe868a238b1d = $(`<div id="html_9415a3f3568d43954a0cfe868a238b1d" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Bad Ischl, AT<br>     <strong>Temperature:</strong> 10.96 °C<br>     <strong>Humidity:</strong> 76.0%<br>     <strong>Pressure:</strong> 1012.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_2884bcd331c45ebed45b14177d4778f9.setContent(html_9415a3f3568d43954a0cfe868a238b1d);
+            
+        
+
+        marker_bf0d85d36d3c2a02fc93d477ba7c5438.bindPopup(popup_2884bcd331c45ebed45b14177d4778f9)
+        ;
+
+        
+    
+    
+            var marker_c27b97d2fbdceffb0ea719b200c88a83 = L.marker(
+                [51.4042, 5.7486],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_8fa3447049a074e87471b138f213efa9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c9b959f35a875d9efc503ca0f21c229f = $(`<div id="html_c9b959f35a875d9efc503ca0f21c229f" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Asten, NL<br>     <strong>Temperature:</strong> 16.09 °C<br>     <strong>Humidity:</strong> 66.0%<br>     <strong>Pressure:</strong> 1015.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_8fa3447049a074e87471b138f213efa9.setContent(html_c9b959f35a875d9efc503ca0f21c229f);
+            
+        
+
+        marker_c27b97d2fbdceffb0ea719b200c88a83.bindPopup(popup_8fa3447049a074e87471b138f213efa9)
+        ;
+
+        
+    
+    
+            var marker_c9eb52dbd2c8c747b565ffbac1301bcb = L.marker(
+                [48.1833, 16.6667],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_2503e707d7a7be5ae1048daa7ad1cb1d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5e88860e79fa5e3a4fd23da10c736a5a = $(`<div id="html_5e88860e79fa5e3a4fd23da10c736a5a" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Andlersdorf, AT<br>     <strong>Temperature:</strong> 16.37 °C<br>     <strong>Humidity:</strong> 59.0%<br>     <strong>Pressure:</strong> 1011.0 hPa<br>     <strong>Weather:</strong> broken clouds     </div>`)[0];
+                popup_2503e707d7a7be5ae1048daa7ad1cb1d.setContent(html_5e88860e79fa5e3a4fd23da10c736a5a);
+            
+        
+
+        marker_c9eb52dbd2c8c747b565ffbac1301bcb.bindPopup(popup_2503e707d7a7be5ae1048daa7ad1cb1d)
+        ;
+
+        
+    
+    
+            var marker_d6320c1e83d5d407fc25ed61351f8bf1 = L.marker(
+                [48.1229, 14.8721],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_47872413acdfbe62bee48dab2509eaa1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_85a2c1b376353b210d1ded71baad2370 = $(`<div id="html_85a2c1b376353b210d1ded71baad2370" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Amstetten, AT<br>     <strong>Temperature:</strong> 13.93 °C<br>     <strong>Humidity:</strong> 67.0%<br>     <strong>Pressure:</strong> 1012.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_47872413acdfbe62bee48dab2509eaa1.setContent(html_85a2c1b376353b210d1ded71baad2370);
+            
+        
+
+        marker_d6320c1e83d5d407fc25ed61351f8bf1.bindPopup(popup_47872413acdfbe62bee48dab2509eaa1)
+        ;
+
+        
+    
+    
+            var marker_e829879c1fd68e2f44a79b109cf2b85b = L.marker(
+                [48.5211, 14.2958],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_e197c84790d4cda2c8cf3445987f174e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7ca1949257d113d12a0fd4b7a3cc32e9 = $(`<div id="html_7ca1949257d113d12a0fd4b7a3cc32e9" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Bad Leonfelden, AT<br>     <strong>Temperature:</strong> 11.82 °C<br>     <strong>Humidity:</strong> 72.0%<br>     <strong>Pressure:</strong> 1011.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_e197c84790d4cda2c8cf3445987f174e.setContent(html_7ca1949257d113d12a0fd4b7a3cc32e9);
+            
+        
+
+        marker_e829879c1fd68e2f44a79b109cf2b85b.bindPopup(popup_e197c84790d4cda2c8cf3445987f174e)
+        ;
+
+        
+    
+    
+            var marker_8459596daba269b99ad8ed669131259d = L.marker(
+                [47.4503, 9.8314],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_66ec3848ce702e01cb9e622304fcbabc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6d50b240dd1d7b626153f3af44ee3163 = $(`<div id="html_6d50b240dd1d7b626153f3af44ee3163" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Alberschwende, AT<br>     <strong>Temperature:</strong> 12.06 °C<br>     <strong>Humidity:</strong> 73.0%<br>     <strong>Pressure:</strong> 1012.0 hPa<br>     <strong>Weather:</strong> light rain     </div>`)[0];
+                popup_66ec3848ce702e01cb9e622304fcbabc.setContent(html_6d50b240dd1d7b626153f3af44ee3163);
+            
+        
+
+        marker_8459596daba269b99ad8ed669131259d.bindPopup(popup_66ec3848ce702e01cb9e622304fcbabc)
+        ;
+
+        
+    
+    
+            var marker_f923d2de2297b4da0c7f52b0f2b5a4e3 = L.marker(
+                [47.2333, 9.5167],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_7a8390eedfbb8a69be1dd62e830e0e6a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_73478acf68730165ac7724cfdedf3ac2 = $(`<div id="html_73478acf68730165ac7724cfdedf3ac2" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Ruggell, LI<br>     <strong>Temperature:</strong> 15.12 °C<br>     <strong>Humidity:</strong> 60.0%<br>     <strong>Pressure:</strong> 1012.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_7a8390eedfbb8a69be1dd62e830e0e6a.setContent(html_73478acf68730165ac7724cfdedf3ac2);
+            
+        
+
+        marker_f923d2de2297b4da0c7f52b0f2b5a4e3.bindPopup(popup_7a8390eedfbb8a69be1dd62e830e0e6a)
+        ;
+
+        
+    
+    
+            var marker_531d336491a487b8e594d236a29063a8 = L.marker(
+                [54.2167, 24.5667],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_e253450df4c4aee9396a60d38c4d5cc0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_455fcff9556c2dbb83f5226b4741036c = $(`<div id="html_455fcff9556c2dbb83f5226b4741036c" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Varėna, LT<br>     <strong>Temperature:</strong> 3.63 °C<br>     <strong>Humidity:</strong> 96.0%<br>     <strong>Pressure:</strong> 1011.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_e253450df4c4aee9396a60d38c4d5cc0.setContent(html_455fcff9556c2dbb83f5226b4741036c);
+            
+        
+
+        marker_531d336491a487b8e594d236a29063a8.bindPopup(popup_e253450df4c4aee9396a60d38c4d5cc0)
+        ;
+
+        
+    
+    
+            var marker_220339be966488d94c9617b3f14f7589 = L.marker(
+                [54.6333, 24.9333],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_26e05fa7babff15a9d366be0206be306 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_943b895d3460d9de899e0f5eafcc020b = $(`<div id="html_943b895d3460d9de899e0f5eafcc020b" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Trakai, LT<br>     <strong>Temperature:</strong> 4.51 °C<br>     <strong>Humidity:</strong> 94.0%<br>     <strong>Pressure:</strong> 1011.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_26e05fa7babff15a9d366be0206be306.setContent(html_943b895d3460d9de899e0f5eafcc020b);
+            
+        
+
+        marker_220339be966488d94c9617b3f14f7589.bindPopup(popup_26e05fa7babff15a9d366be0206be306)
+        ;
+
+        
+    
+    
+            var marker_8747236cc3677643079aef78b0298992 = L.marker(
+                [55.9667, 23.8667],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_5cf3ff7508d01888597315bf684e125f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9407bd8c09f19676b7149ba25892d6d2 = $(`<div id="html_9407bd8c09f19676b7149ba25892d6d2" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Pakruojis, LT<br>     <strong>Temperature:</strong> 3.6 °C<br>     <strong>Humidity:</strong> 92.0%<br>     <strong>Pressure:</strong> 1012.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_5cf3ff7508d01888597315bf684e125f.setContent(html_9407bd8c09f19676b7149ba25892d6d2);
+            
+        
+
+        marker_8747236cc3677643079aef78b0298992.bindPopup(popup_5cf3ff7508d01888597315bf684e125f)
+        ;
+
+        
+    
+    
+            var marker_d31a43d803067267a1d5a21b29aab5fd = L.marker(
+                [55.6339, 22.9342],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_793e353fbdf422bb30b827f5e54957de = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_11d92a81cd16cd37775a3e94c84a91f1 = $(`<div id="html_11d92a81cd16cd37775a3e94c84a91f1" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Kelmė, LT<br>     <strong>Temperature:</strong> 3.73 °C<br>     <strong>Humidity:</strong> 87.0%<br>     <strong>Pressure:</strong> 1012.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_793e353fbdf422bb30b827f5e54957de.setContent(html_11d92a81cd16cd37775a3e94c84a91f1);
+            
+        
+
+        marker_d31a43d803067267a1d5a21b29aab5fd.bindPopup(popup_793e353fbdf422bb30b827f5e54957de)
+        ;
+
+        
+    
+    
+            var marker_d4b27cc1afad3229aedfd1bd058417a8 = L.marker(
+                [55.2883, 23.9747],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_eb2917b607233d0093d0edc257af7957 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_af91cdad53d9eafdf684f6fa10ba526b = $(`<div id="html_af91cdad53d9eafdf684f6fa10ba526b" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Kėdainiai, LT<br>     <strong>Temperature:</strong> 4.05 °C<br>     <strong>Humidity:</strong> 86.0%<br>     <strong>Pressure:</strong> 1012.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_eb2917b607233d0093d0edc257af7957.setContent(html_af91cdad53d9eafdf684f6fa10ba526b);
+            
+        
+
+        marker_d4b27cc1afad3229aedfd1bd058417a8.bindPopup(popup_eb2917b607233d0093d0edc257af7957)
+        ;
+
+        
+    
+    
+            var marker_d134ad722a7cdac1440b1b1daa2a3993 = L.marker(
+                [56.2403, 23.6153],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_bb9b538c93ba940e8ae2027c2d85512c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_09129ca26058ee9099b39242ae0e74f4 = $(`<div id="html_09129ca26058ee9099b39242ae0e74f4" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Joniškis, LT<br>     <strong>Temperature:</strong> 3.33 °C<br>     <strong>Humidity:</strong> 97.0%<br>     <strong>Pressure:</strong> 1012.0 hPa<br>     <strong>Weather:</strong> overcast clouds     </div>`)[0];
+                popup_bb9b538c93ba940e8ae2027c2d85512c.setContent(html_09129ca26058ee9099b39242ae0e74f4);
+            
+        
+
+        marker_d134ad722a7cdac1440b1b1daa2a3993.bindPopup(popup_bb9b538c93ba940e8ae2027c2d85512c)
+        ;
+
+        
+    
+    
+            var marker_1ac43cf3a6dde950156def43b7ee500d = L.marker(
+                [54.6667, 25.2438],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_9d9cf220aeecaf26b8e4a5321f4317c4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_254ab4e7a0071b703e99199548a41cd4 = $(`<div id="html_254ab4e7a0071b703e99199548a41cd4" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Vilkpėdė, LT<br>     <strong>Temperature:</strong> 5.33 °C<br>     <strong>Humidity:</strong> 97.0%<br>     <strong>Pressure:</strong> 1011.0 hPa<br>     <strong>Weather:</strong> mist     </div>`)[0];
+                popup_9d9cf220aeecaf26b8e4a5321f4317c4.setContent(html_254ab4e7a0071b703e99199548a41cd4);
+            
+        
+
+        marker_1ac43cf3a6dde950156def43b7ee500d.bindPopup(popup_9d9cf220aeecaf26b8e4a5321f4317c4)
+        ;
+
+        
+    
+    
+            var marker_d415e4d705ab8dd5340e75e014652e5d = L.marker(
+                [49.6206, 6.0733],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_39cac059124dc7c313ed93213bf539d6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2a4758e5c4d1a985f40cf09a0a33f41d = $(`<div id="html_2a4758e5c4d1a985f40cf09a0a33f41d" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Strassen, LU<br>     <strong>Temperature:</strong> 15.68 °C<br>     <strong>Humidity:</strong> 52.0%<br>     <strong>Pressure:</strong> 1013.0 hPa<br>     <strong>Weather:</strong> clear sky     </div>`)[0];
+                popup_39cac059124dc7c313ed93213bf539d6.setContent(html_2a4758e5c4d1a985f40cf09a0a33f41d);
+            
+        
+
+        marker_d415e4d705ab8dd5340e75e014652e5d.bindPopup(popup_39cac059124dc7c313ed93213bf539d6)
+        ;
+
+        
+    
+    
+            var marker_ed27bb0dbe8439ebc0c3ea4a4ff30162 = L.marker(
+                [49.8306, 6.0986],
+                {
+}
+            ).addTo(map_4d70cd30b65a59e7c5bb9ce16911606b);
+        
+    
+        var popup_6dae1608f51f1abeb28ea7f362570f33 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f5f1ff3a4c60365265606639529f5838 = $(`<div id="html_f5f1ff3a4c60365265606639529f5838" style="width: 100.0%; height: 100.0%;">     <strong>City:</strong> Schieren, LU<br>     <strong>Temperature:</strong> 15.97 °C<br>     <strong>Humidity:</strong> 54.0%<br>     <strong>Pressure:</strong> 1014.0 hPa<br>     <strong>Weather:</strong> broken clouds     </div>`)[0];
+                popup_6dae1608f51f1abeb28ea7f362570f33.setContent(html_f5f1ff3a4c60365265606639529f5838);
+            
+        
+
+        marker_ed27bb0dbe8439ebc0c3ea4a4ff30162.bindPopup(popup_6dae1608f51f1abeb28ea7f362570f33)
+        ;
+
+        
+    
+</script>
+</html>
