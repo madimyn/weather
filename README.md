@@ -6,10 +6,6 @@ This project gathers weather data for European cities, processes and visualizes 
 - [Overview](#overview)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Setup and Installation](#setup-and-installation)
-- [Project Files](#project-files)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 
